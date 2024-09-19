@@ -14,6 +14,6 @@ export async function POST(request: NextRequest) {
     console.error("Error:", err);
     return NextResponse.json({ message: "失敗", err }, { status: 500 });
   } finally {
-    await prisma.$disconnect(); // データベース接続のクリーンアップ
+    await prisma.$disconnect(); // データベース接続のクリーンアップ3
   }
 }
